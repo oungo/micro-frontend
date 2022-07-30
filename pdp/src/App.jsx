@@ -6,6 +6,7 @@ import "./index.scss";
 import SafeCompnent from './SafeComponent';
 import Header from 'home/Header'
 import Footer from 'home/Footer'
+import PDPContent from "../PDPContent";
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
@@ -13,7 +14,7 @@ const App = () => (
       <Header />
     </SafeCompnent>
     <div className="my-10">
-      PDP Page Content
+      <PDPContent />
     </div>
     <Footer />
   </div>
