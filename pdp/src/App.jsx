@@ -1,22 +1,24 @@
-import React, { Suspense} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import "./index.scss";
 
-import SafeCompnent from './SafeComponent';
 import Header from 'home/Header'
 import Footer from 'home/Footer'
 import PDPContent from "../PDPContent";
 
 const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <SafeCompnent>
+  <Router>
+    <div className="mt-10 text-3xl mx-auto max-w-6xl">
       <Header />
-    </SafeCompnent>
-    <div className="my-10">
-      <PDPContent />
+      <div className="my-10">
+        <Routes>
+          <Route path="/product/:id" element={<PDPContent />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
+  </Router>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
