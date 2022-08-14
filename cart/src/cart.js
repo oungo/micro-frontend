@@ -60,7 +60,6 @@ export const clearCart = () => {
       "Content-Type": "application/json",
       Authorization: `Bearer ${jwt.value}`,
     },
-    body: JSON.stringify({ id })
   })
     .then((res) => res.json())
     .then(() => {
