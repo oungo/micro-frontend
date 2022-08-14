@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MiniCart from "./MiniCart";
 import { jwt } from './cart';
 import Login from './Login';
 
@@ -11,9 +12,9 @@ export default function CartContent() {
   
   return (
     <div>
-      <div>JWT: {token} 
-        <Login />
-      </div>
+      <div>JWT: {token}</div>
+      <Login />
+      <MiniCart />
     </div>
   )
 }
