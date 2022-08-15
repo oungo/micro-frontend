@@ -22,13 +22,13 @@ export default function Login() {
             placeholder='User Name'
             value={username}
             onChange={(evt) => setUsername(evt.target.value)}
-            className="border text-sm border-gray-400 p-2 rounded-md w-full"
+            className="border text-sm border-gray-400 p-2 rounded-md w-full text-black"
           />
           <input
             type="password"
             value={password}
             onChange={(evt) => setPassword(evt.target.value)}
-            className="border text-sm border-gray-400 p-2 rounded-md w-full"
+            className="border text-sm border-gray-400 p-2 rounded-md w-full text-black"
           />
           <button
             className='bg-green-900 text-white py-2 px-5 rounded-md text-sm mt-2'

@@ -24,7 +24,7 @@ export default function MiniCart() {
       {showCart && ( 
         <>
           <div className='absolute p-5 border-4 border-blue-800 bg-white' style={{ width: 300, top: "2rem", left: -250 }}>
-            <div className='grid gap-3 text-sm' style={{gridTemplateColumns: '1fr 3fr 10fr 2fr'}}>
+            <div className='grid gap-3 text-sm text-black' style={{gridTemplateColumns: '1fr 3fr 10fr 2fr'}}>
               {items.map((item) => (
                 <Fragment key={item.id}>
                   <div>{item.quantity}</div>
