@@ -1,4 +1,6 @@
 import React from 'react'
+import MiniCart from 'cart/MiniCart';
+// import Login from 'cart/Login';
 
 export default function Header() {
   return (

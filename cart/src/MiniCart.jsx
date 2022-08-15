@@ -54,6 +54,15 @@ export default function MiniCart() {
                   Clear Cart 
                 </button>
               </div>
+              <div className='flex-end'>
+                <button 
+                  id="clearcart" 
+                  className="bg-green-800 border border-green-800 text-white py-2 px-5"
+                  onClick={clearCart}
+                >
+                  Checkout
+                </button>
+              </div>
             </div>
           </div>
         </>
